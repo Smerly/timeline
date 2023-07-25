@@ -5,10 +5,10 @@ body {
 }
 
 .container {
-	padding: 7vw;
+	/* padding: 7vw; */
 }
 
 .sakura-h1 {
 	font-family: 'Sakura Blossom', sans-serif;
-	color: pink;
+	color: rgb(255, 191, 202);
 }
