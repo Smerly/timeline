@@ -57,7 +57,7 @@ function D3timeline() {
 		const clickHandler = (d) => {
 			console.log('<-- Inside Event Handler function --->');
 			console.log(d.title);
-			navigate('/something');
+			navigate(`/event/${d.title}`);
 		};
 
 		const PADDING = width / 10;
@@ -118,9 +118,9 @@ function D3timeline() {
 					.attr('x', scale(d.target.__data__.ts))
 					.attr('y', height * (1 / 2) - 32 - 10);
 			})
-			.on('click', (d) => {
-				console.log('clicked');
-				clickHandler(d);
+			.on('click', (d, i) => {
+				console.log(i);
+				clickHandler(i);
 			})
 			.on('mouseout', function (d, i) {
 				select(rootElement).selectAll('text.timeline-event-text').remove();
@@ -139,11 +139,7 @@ function D3timeline() {
 		}
 	}, [size]);
 
-	return (
-		<div ref={rootRef} style={{ height: 500 }}>
-			d3timeline
-		</div>
-	);
+	return <div ref={rootRef} style={{ height: 500 }}></div>;
 }
 
 export default D3timeline;
