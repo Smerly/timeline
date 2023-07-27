@@ -4,6 +4,11 @@ import { scaleLinear } from 'd3-scale';
 export const drawTimelineEvents = (rootElement, windowSize, timelineEvents) => {
 	const { width, height } = windowSize;
 
+	const clickHandler = (d) => {
+		console.log('<-- Inside Event Handler function --->');
+		console.log(d.title);
+	};
+
 	const PADDING = width / 10;
 	const scale = scaleLinear()
 		.domain([
@@ -53,6 +58,7 @@ export const drawTimelineEvents = (rootElement, windowSize, timelineEvents) => {
 						return 'start';
 					}
 				})
+				.style('pointer-events', 'visible')
 				.style('fill', '#004669')
 				.style('font-weight', 'bold')
 				.text(`${i.title}`)
@@ -60,6 +66,10 @@ export const drawTimelineEvents = (rootElement, windowSize, timelineEvents) => {
 				.text(`${new Date(i.ts).toLocaleString()}`)
 				.attr('x', scale(d.target.__data__.ts))
 				.attr('y', height * (1 / 2) - 32 - 10);
+		})
+		.on('click', (d) => {
+			console.log('clicked');
+			clickHandler(d);
 		})
 		.on('mouseout', function (d, i) {
 			select(rootElement).selectAll('text.timeline-event-text').remove();
