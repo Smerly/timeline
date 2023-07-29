@@ -12,3 +12,7 @@ body {
 	font-family: 'Sakura Blossom', sans-serif;
 	color: rgb(255, 191, 202);
 }
+
+.tick line {
+	visibility: hidden;
+}

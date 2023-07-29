@@ -83,23 +83,24 @@ export const drawTimeline = (rootElement, windowSize, timelineEvents) => {
 	const axis = axisBottom(scale)
 		.ticks()
 		.tickFormat((d) => {
-			// console.log("d", d);
+			console.log('d', d);
 			const date = new Date(d);
-			return `${date.toLocaleDateString()}`;
+			// return `${date.toLocaleDateString()}`;
 		});
 
+	// Text
 	select(rootElement)
 		.select('svg')
 		.append('g')
 		.attr('class', 'x-axis')
 		.attr('width', width)
 		.attr('transform', `translate(${0}, ${height * (1 / 2)})`)
-		.call(axis)
-		.selectAll('text')
-		.style('text-anchor', 'end')
-		.style('font-size', '16px')
-		.attr('dx', '-2em')
-		.attr('dy', '1em')
-		.attr('transform', 'rotate(-65)');
+		.call(axis);
+	// .selectAll('text')
+	// .style('text-anchor', 'end')
+	// .style('font-size', '16px')
+	// .attr('dx', '-2em')
+	// .attr('dy', '1em')
+	// .attr('transform', 'rotate(-65)');
 	// drawTimelineEvents(rootElement, windowSize, timelineEvents);
 };
