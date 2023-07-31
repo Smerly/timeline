@@ -3,6 +3,7 @@ import ReactPlayer from 'react-player';
 function TheReactPlayer(size) {
 	const { width, height } = size;
 	console.log(width);
+	console.log(window.innerWidth);
 	return (
 		<ReactPlayer
 			className="background"
@@ -16,8 +17,10 @@ function TheReactPlayer(size) {
 			muted={true}
 			playing={true}
 			playsinline={true}
-			height={'1000px'}
-			width={'2000px'}
+			// height={'1000px'}
+			// width={'2000px'}
+			height={window.innerHeight + 100}
+			width={window.innerWidth + 400}
 			style={{ marginLeft: -200 }}
 			// width={size + 1000}
 			// height={size + 1000}
