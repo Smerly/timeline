@@ -1,9 +1,17 @@
 import ReactPlayer from 'react-player';
+import { useState, useEffect } from 'react';
 
 function TheReactPlayer(size) {
+	const [time, setTime] = useState(new Date());
 	const { width, height } = size;
 	console.log(width);
 	console.log(window.innerWidth);
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setTime(new Date());
+		}, 1000);
+		return () => clearInterval(interval);
+	}, []);
 	return (
 		<ReactPlayer
 			className="background"
