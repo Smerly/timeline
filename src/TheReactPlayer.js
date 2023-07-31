@@ -6,12 +6,12 @@ function TheReactPlayer(size) {
 	const { width, height } = size;
 	console.log(width);
 	console.log(window.innerWidth);
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setTime(new Date());
-		}, 1000);
-		return () => clearInterval(interval);
-	}, []);
+	// useEffect(() => {
+	// 	const interval = setInterval(() => {
+	// 		setTime(new Date());
+	// 	}, 1000);
+	// 	return () => clearInterval(interval);
+	// }, []);
 	return (
 		<ReactPlayer
 			className="background"
@@ -29,7 +29,7 @@ function TheReactPlayer(size) {
 			// width={'2000px'}
 			height={window.innerHeight + 100}
 			width={window.innerWidth + 400}
-			style={{ marginLeft: -window.innerWidth / 10 }}
+			style={{ marginLeft: -window.innerWidth / 8 }}
 			// width={size + 1000}
 			// height={size + 1000}
 		/>
