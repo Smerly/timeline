@@ -6,12 +6,12 @@ function timelineDrawing(rootElement, windowSize, timelineEvents) {
 	const { width, height } = windowSize;
 
 	// Drawing in box
-	select(rootElement)
-		.select('svg')
-		.append('rect')
-		.attr('width', width)
-		.attr('height', height)
-		.attr('fill', '#61DAFB');
+	// select(rootElement)
+	// 	.select('svg')
+	// 	.append('rect')
+	// 	.attr('width', width)
+	// 	.attr('height', height)
+	// 	.attr('fill', '#61DAFB');
 
 	drawTimeline(rootElement, windowSize, timelineEvents);
 }

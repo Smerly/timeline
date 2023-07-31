@@ -72,7 +72,7 @@ import { drawTimelineEvents } from './drawTimelineEvents';
 export const drawTimeline = (rootElement, windowSize, timelineEvents) => {
 	const { width, height } = windowSize;
 
-	const PADDING = width / 10;
+	const PADDING = width / 8;
 	const scale = scaleLinear()
 		.domain([
 			timelineEvents[0].ts,
@@ -95,6 +95,7 @@ export const drawTimeline = (rootElement, windowSize, timelineEvents) => {
 		.attr('class', 'x-axis')
 		.attr('width', width)
 		.attr('transform', `translate(${0}, ${height * (1 / 2)})`)
+		.attr('class', 'axisPink')
 		.call(axis);
 	// .selectAll('text')
 	// .style('text-anchor', 'end')

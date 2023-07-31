@@ -9,7 +9,7 @@ export const drawTimelineEvents = (rootElement, windowSize, timelineEvents) => {
 		console.log(d.title);
 	};
 
-	const PADDING = width / 10;
+	const PADDING = width / 8;
 	const scale = scaleLinear()
 		.domain([
 			timelineEvents[0].ts,

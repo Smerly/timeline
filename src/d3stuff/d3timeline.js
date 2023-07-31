@@ -5,6 +5,9 @@ import { select } from 'd3-selection';
 import { scaleLinear } from 'd3-scale';
 import timelineDrawing from '../drawings/timelineDrawing';
 import { drawTimelineEvents } from '../drawings/drawTimelineEvents';
+import topLeftTimeline from '../images/top-left-timeline.png';
+import topRightTimeline from '../images/top-right-timeline.png';
+import topTimeline from '../images/top-timeline.png';
 
 function D3timeline() {
 	const navigate = useNavigate();
@@ -60,7 +63,7 @@ function D3timeline() {
 			navigate(`/event/${d.title}`);
 		};
 
-		const PADDING = width / 10;
+		const PADDING = width / 8;
 		const scale = scaleLinear()
 			.domain([
 				timelineEvents[0].ts,
@@ -86,7 +89,7 @@ function D3timeline() {
 			})
 			.attr('transform', `translate(${0}, ${height * (1 / 2)})`)
 			.attr('fill', function (d) {
-				return d.color;
+				return 'pink';
 			})
 			.attr('stroke', 'rgba(0,0,0,1)')
 			.on('mouseover', function (d, i) {
@@ -139,7 +142,28 @@ function D3timeline() {
 		}
 	}, [size]);
 
-	return <div ref={rootRef} style={{ height: 500 }}></div>;
+	return (
+		<div
+			style={{
+				display: 'flex',
+				flexDirection: 'column',
+				justifyContent: 'center',
+				alignContent: 'center',
+			}}
+		>
+			<h1 className="sakura-h1"> A Year of Us.</h1>
+			<div
+				ref={rootRef}
+				className="timeline"
+				style={{ margin: '5vw', marginTop: 200 }}
+			>
+				<img className="left-column" src={topLeftTimeline} />
+				<img className="center-column" src={topTimeline} />
+
+				<img className="right-column" src={topRightTimeline} />
+			</div>
+		</div>
+	);
 }
 
 export default D3timeline;
