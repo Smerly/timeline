@@ -21,7 +21,7 @@ function TheReactPlayer(size) {
 			// width={'2000px'}
 			height={window.innerHeight + 100}
 			width={window.innerWidth + 400}
-			style={{ marginLeft: -200 }}
+			style={{ marginLeft: -window.innerWidth / 10 }}
 			// width={size + 1000}
 			// height={size + 1000}
 		/>
