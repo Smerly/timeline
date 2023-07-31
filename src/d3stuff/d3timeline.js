@@ -11,7 +11,7 @@ import topTimeline from '../images/top-timeline.png';
 
 function D3timeline() {
 	const navigate = useNavigate();
-	console.log(new Date('2023, 01, 01').getTime());
+	// console.log(new Date('2023, 01, 01').getTime());
 
 	const data = [
 		{
@@ -56,10 +56,11 @@ function D3timeline() {
 	const size = useResize(rootRef);
 	const drawTimelineEvents = (rootElement, windowSize, timelineEvents) => {
 		const { width, height } = windowSize;
+		console.log(width);
 
 		const clickHandler = (d) => {
 			console.log('<-- Inside Event Handler function --->');
-			console.log(d.title);
+			// console.log(d.title);
 			navigate(`/event/${d.title}`);
 		};
 
@@ -122,7 +123,7 @@ function D3timeline() {
 					.attr('y', height * (1 / 2) - 32 - 10);
 			})
 			.on('click', (d, i) => {
-				console.log(i);
+				// console.log(i);
 				clickHandler(i);
 			})
 			.on('mouseout', function (d, i) {
@@ -131,7 +132,7 @@ function D3timeline() {
 	};
 	useEffect(() => {
 		select(rootRef.current)?.select('svg').remove();
-		console.log(size);
+
 		if (size) {
 			select(rootRef.current)
 				.append('svg')

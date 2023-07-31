@@ -83,7 +83,7 @@ export const drawTimeline = (rootElement, windowSize, timelineEvents) => {
 	const axis = axisBottom(scale)
 		.ticks()
 		.tickFormat((d) => {
-			console.log('d', d);
+			// console.log('d', d);
 			const date = new Date(d);
 			// return `${date.toLocaleDateString()}`;
 		});

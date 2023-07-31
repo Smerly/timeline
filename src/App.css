@@ -48,7 +48,12 @@ body {
 .background {
 	position: fixed;
 	z-index: -1;
-	margin-left: -100px;
+	/* margin-left: -250px; */
+	/* position: fixed; */
+	/* width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px; */
 }
 
 .center-column {

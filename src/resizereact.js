@@ -8,7 +8,7 @@ import React, {
 } from 'react';
 import debounce from 'lodash/debounce';
 
-export function useResize(ref) {
+export function useResizeReact(ref) {
 	const [state, setState] = useState({ width: 0, height: 0 });
 	useEffect(() => {
 		const getSize = debounce(() => {
