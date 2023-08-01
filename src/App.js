@@ -20,16 +20,14 @@ function App() {
 
 	return (
 		<div className="App">
-			<div className="container">
-				{/* <h1 className="sakura-h1"> hi </h1> */}
-				{size ? <TheReactPlayer size={size} /> : null}
-				<Router>
-					<Routes>
-						<Route exact path="/" Component={D3timeline} />
-						<Route path="/event/:slug" Component={EventComponents} />
-					</Routes>
-				</Router>
-			</div>
+			{/* <h1 className="sakura-h1"> hi </h1> */}
+			{size ? <TheReactPlayer size={size} /> : null}
+			<Router>
+				<Routes>
+					<Route exact path="/" Component={D3timeline} />
+					<Route path="/event/:slug" Component={EventComponents} />
+				</Routes>
+			</Router>
 		</div>
 	);
 }
