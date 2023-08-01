@@ -28,11 +28,11 @@ function TheReactPlayer(size) {
 			// height={'1000px'}
 			// width={'2000px'}
 			// height={window.innerHeight + 300}
-			// width={window.innerWidth + 1000}
+			// width={window.innerWidth + 400}
 			// style={{ marginLeft: -window.innerWidth / 3 }}
-			height={'100%'}
-			width={'100%'}
-			style={{ marginLeft: -window.innerWidth / 3 }}
+			height={'188.5%'}
+			width={'177%'}
+			// style={{ marginLeft: -window.innerWidth / 3 }}
 			// width={size + 1000}
 			// height={size + 1000}
 		/>
