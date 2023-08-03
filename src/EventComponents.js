@@ -14,10 +14,12 @@ function EventComponents() {
 	console.log(backArrow.naturalHeight);
 	return (
 		<div>
+			<div className='overlay' />
+			
 			<Link to={`/`}>
-				<img src={backArrow} width="70px" style={{ margin: '5vw' }} />
+				<img src={backArrow} style={{ width: '4vw', margin: '1vw', marginLeft: '4vw', marginTop: '3vw' }} />
 			</Link>
-			<div>{slug}</div>
+			<div className='event-main container'>{slug}</div>
 		</div>
 	);
 }

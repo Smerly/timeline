@@ -18,8 +18,8 @@ function TheReactPlayer(size) {
 	const [width, height] = useWindowSize();
 	const xtraHeight = height / 8;
 	const xtraWidth = width / 8;
-	console.log(width);
-	console.log(height);
+	// console.log(width);
+	// console.log(height);
 	return (
 		// <div className="background-support">
 		<ReactPlayer

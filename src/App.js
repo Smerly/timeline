@@ -12,12 +12,7 @@ function App() {
 	// getting the right size
 	console.log(rootRef);
 	const size = useResize(rootRef);
-	// useEffect(() => {
-	// 	if (size) {
-
-	// 	}
-	// }, [size]);
-
+	
 	return (
 		<div className="App">
 			{/* <h1 className="sakura-h1"> hi </h1> */}
