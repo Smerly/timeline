@@ -71,7 +71,7 @@ import { drawTimelineEvents } from './drawTimelineEvents';
 
 export const drawTimeline = (rootElement, windowSize, timelineEvents) => {
 	const { width, height } = windowSize;
-
+	
 	const PADDING = width / 8;
 	const scale = scaleLinear()
 		.domain([

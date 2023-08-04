@@ -49,6 +49,7 @@ body {
 	flex-direction: row;
 	/* justify-content: space-around; */
 	height: 500px;
+	width: 85%;
 	border: 5px rgb(255, 247, 247) solid;
 }
 
@@ -56,12 +57,38 @@ body {
 
 .left-column {
 	display: flex;
-	height: 618px;
+	height: 610px;
 	flex-direction: column;
 	margin-top: -62px;
 	margin-left: -55px;
 	/* flex: 50%; */
 	position: absolute;
+}
+
+.center-column {
+	flex-direction: column;
+	/* margin: auto; */
+	flex: 50%;
+	position: absolute;
+	right: 35vw;
+	margin-top: -14px;
+	width: 30vw;
+	height: auto;
+}
+
+.right-column {
+	flex-direction: column;
+	margin-left: auto;
+	/* flex: 50%; */
+	position: absolute;
+	right: 4.5%;
+	height: 610px;
+	margin: auto;
+	margin-top: -62px;
+	
+	/* margin-right: 30px; */
+	/* justify-self: flex-end; */
+	/* align-self: flex-end; */
 }
 .background {
 	position: fixed;
@@ -82,30 +109,6 @@ body {
 	width: 100vw;
 	height: 100vh;
 	border: 5px red solid;
-}
-
-.center-column {
-	flex-direction: column;
-	/* margin: auto; */
-	flex: 50%;
-	position: absolute;
-	right: 35vw;
-	margin-top: -14px;
-	width: 30vw;
-	height: auto;
-}
-
-.right-column {
-	flex-direction: column;
-	margin-left: auto;
-	/* flex: 50%; */
-	position: absolute;
-	right: 0%;
-	height: 618px;
-	margin-top: -62px;
-	margin-right: 30px;
-	/* justify-self: flex-end; */
-	/* align-self: flex-end; */
 }
 
 .axisPink {

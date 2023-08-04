@@ -522,8 +522,8 @@ function D3timeline() {
 			style={{
 				display: 'flex',
 				flexDirection: 'column',
-				justifyContent: 'center',
-				alignContent: 'center',
+				// justifyContent: 'center',
+				alignItems: 'center',
 			}}
 		>
 			
