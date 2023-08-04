@@ -106,7 +106,7 @@ function D3timeline() {
                 ""
             ],
             "videos": [
-                "./images/daisy-dance.MOV"
+                "daisy-dance"
             ]
         }, 
         {
@@ -137,7 +137,7 @@ function D3timeline() {
             ]
         }, 
         {
-            "title": "Date/Daisy Birthday Version Bay.0",
+            "title": "Daisy Birthday Date Version Bay.0",
             "date": "September 23rd, 2022",
 			ts: 1663916400000,
             "description": "Our celebration again! We had Soba Ichi, you had soba for the first time! It's not exactly your thing, but it's good to try it!",
@@ -226,7 +226,7 @@ function D3timeline() {
                 "https://cdn.discordapp.com/attachments/584882522211483754/1136543796969091132/image0.jpg"
             ],
             "videos": [
-                "./images/carousel.MOV"
+                "carousel"
             ]
         }, 
         {
@@ -259,7 +259,7 @@ function D3timeline() {
             ]
         },
         {
-            "title": "First (I think?) Time Having Dinner With Your Family!",
+            "title": "First (I think) Time Having Dinner With Your Family!",
             "date": "January 14th, 2023",
 			ts: 1673683200000,
             "description": "First time having dinner with your family! We had some crazy krab guts with rice and Kewpie mayo! Also got the rainbow cake for your fam.",
@@ -282,7 +282,7 @@ function D3timeline() {
                 ""   
             ],
             "videos": [
-                "./images/kdramakiss.mov"
+                "kdramakiss"
             ]
 
         },
@@ -346,7 +346,7 @@ function D3timeline() {
                 "https://cdn.discordapp.com/attachments/584882522211483754/1136567863054966815/image0.jpg"   
             ],
             "videos": [
-                "./images/FAAS.MOV"
+                "FAAS"
             ]
 
         },
@@ -374,7 +374,7 @@ function D3timeline() {
                 "https://cdn.discordapp.com/attachments/584882522211483754/1136569728182267964/image0.jpg"
             ],
             "videos": [
-                "./images/tsukemen.MOV"
+                "tsukemen"
             ]
 
         },
@@ -527,7 +527,7 @@ function D3timeline() {
 			}}
 		>
 			
-			<h1 className="sakura-h1"> A Year of Us.</h1>
+			<h1 className="sakura-h1" style={{marginTop: '8vw'}}> A Year of Us.</h1>
 			<div
 				ref={rootRef}
 				className="timeline"

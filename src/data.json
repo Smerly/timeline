@@ -44,7 +44,7 @@
                 ""
             ],
             "videos": [
-                "./images/daisy-dance.MOV"
+                "daisy-dance"
             ]
         }, 
         {
@@ -73,7 +73,7 @@
             ]
         }, 
         {
-            "title": "Date/Daisy Birthday Version Bay.0",
+            "title": "Daisy Birthday Date Version Bay.0",
             "date": "September 23rd, 2022",
             "description": "Our celebration again! We had Soba Ichi, you had soba for the first time! It's not exactly your thing, but it's good to try it!",
             "images": [
@@ -155,7 +155,7 @@
                 "https://cdn.discordapp.com/attachments/584882522211483754/1136543796969091132/image0.jpg"
             ],
             "videos": [
-                "./images/carousel.MOV"
+                "carousel"
             ]
         }, 
         {
@@ -186,7 +186,7 @@
             ]
         },
         {
-            "title": "First (I think?) Time Having Dinner With Your Family!",
+            "title": "First (I think) Time Having Dinner With Your Family!",
             "date": "January 14th, 2023",
             "description": "First time having dinner with your family! We had some crazy krab guts with rice and Kewpie mayo! Also got the rainbow cake for your fam.",
             "images": [
@@ -203,11 +203,10 @@
             "date": "February 5th, 2023",
             "description": "Double Date with Lawrence and Kristen! The origin of the K-drama kiss scene~ O-la-la~ Also Kristen meme vid >.>",
             "images": [
-                "https://cdn.discordapp.com/attachments/584882522211483754/1136562763565641758/image0.jpg",
-                ""   
+                "https://cdn.discordapp.com/attachments/584882522211483754/1136562763565641758/image0.jpg"  
             ],
             "videos": [
-                "./images/kdramakiss.mov"
+                "kdramakiss"
             ]
 
         },
@@ -267,7 +266,7 @@
                 "https://cdn.discordapp.com/attachments/584882522211483754/1136567863054966815/image0.jpg"   
             ],
             "videos": [
-                "./images/FAAS.MOV"
+                "FAAS"
             ]
 
         },
@@ -293,7 +292,7 @@
                 "https://cdn.discordapp.com/attachments/584882522211483754/1136569728182267964/image0.jpg"
             ],
             "videos": [
-                "./images/tsukemen.MOV"
+                "tsukemen"
             ]
 
         },

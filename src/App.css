@@ -13,11 +13,25 @@ body {
 	color: rgb(255, 191, 202);
 	font-size: 4.5vw;
 	text-align: center;
-	margin-top: 8vw;
-	-webkit-text-stroke: 3px rgb(255, 255, 255) ; /* width and color */
+	-webkit-text-stroke: 3px rgb(255, 255, 255) ; 
 	/* text-decoration: underline; */
 }
 
+.sakura-header {
+	font-family: 'Sakura Blossom', sans-serif;
+	font-size: 1.5vw;
+	text-align: center;
+}
+
+.sakura-p {
+	font-family: 'Sakura Blossom', sans-serif;
+	color: rgb(255, 191, 202);
+	font-size: 3vw;
+	padding: 1vw;
+	background-color: white;
+	border-radius: 7px;
+	box-shadow: 0 0 50px 25px rgb(255, 255, 255);
+}
 .tick line {
 	visibility: hidden;
 }
@@ -111,10 +125,32 @@ body {
 }
 
 .event-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background-color: rgba(255, 241, 241, 0.697);
 	border-radius: 10px;
-	height: 40vw;
+	min-height: 100vh;
 	margin: 2vw;
 	padding: 5vw;
 	padding-left: 100px;
+}
+
+.event-img {
+	width: 15vw;
+	height: auto;
+	margin: 2vw;
+	border: 8px rgb(255, 191, 202) solid;
+	border-radius: 7px;
+	box-shadow: 0 0 50px 15px rgb(255, 191, 202);
+}
+
+.img-box {
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 3vw;
 }
