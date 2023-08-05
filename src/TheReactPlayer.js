@@ -45,6 +45,7 @@ function TheReactPlayer(size) {
 			// width={width + xtraWidth}
 			// style={{ marginLeft: -xtraWidth / 2 }}
 			height={'auto'}
+			// height={height + height / 13}
 			width={'100%'}
 
 			// style={{ marginLeft: -window.innerWidth / 3 }}

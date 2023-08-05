@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useResize } from '../resize.js';
 import { select } from 'd3-selection';
@@ -8,55 +8,11 @@ import { drawTimelineEvents } from '../drawings/drawTimelineEvents';
 import topLeftTimeline from '../images/top-left-timeline.png';
 import topRightTimeline from '../images/top-right-timeline.png';
 import topTimeline from '../images/top-timeline.png';
+import ambience from '../images/ambience.mp3'
 
 function D3timeline() {
-	const navigate = useNavigate();
-
-	const dateHelper = (date) => {
-		const tempDate = new Date(date)
-		return `${tempDate.getMonth() + 1}/${tempDate.getDate()}/${tempDate.getFullYear()}`
-	}
-	// const data = [
-	// 	{
-	// 		color: 'yellow',
-	// 		ts: 1659769200000,
-	// 		title: 'August 6th 2022',
-	// 	},
-	// 	{
-	// 		color: 'yellow',
-	// 		ts: 1662015600000,
-	// 		title: 'September 1st 2022',
-	// 	},
-	// 	{
-	// 		color: 'yellow',
-	// 		ts: 1664607600000,
-	// 		title: 'October 1st 2022',
-	// 	},
-	// 	{
-	// 		color: 'yellow',
-	// 		ts: 1667286000000,
-	// 		title: 'November 1st 2022',
-	// 	},
-	// 	{
-	// 		color: 'yellow',
-	// 		ts: 1669881600000,
-	// 		title: 'December 1st 2022',
-	// 	},
-	// 	{
-	// 		color: 'yellow',
-	// 		ts: 1672560000000,
-	// 		title: 'January 1st 2022',
-	// 	},
-	// 	{
-	// 		color: 'red',
-	// 		ts: 1691305200000,
-	// 		title: 'Aug 6 2023',
-	// 	},
-	// ];
 	
-	console.log(new Date('2023, 07, 29').getTime());
-
-	
+    
 	const data = [
 		{
             title: "First Date",
@@ -423,6 +379,36 @@ function D3timeline() {
         }
     ]
 
+    
+
+    const navigate = useNavigate();
+    const [play, setPlay] = useState(false)
+
+	const dateHelper = (date) => {
+		const tempDate = new Date(date)
+		return `${tempDate.getMonth() + 1}/${tempDate.getDate()}/${tempDate.getFullYear()}`
+	}
+	
+	console.log(new Date('2023, 07, 29').getTime());
+
+	const player = useRef();
+
+    const pressedPlay = () => {
+        player.current.play()
+        setPlay(!play)
+    }
+
+    const pressedPause = () => {
+        player.current.pause()
+        setPlay(!play)
+    }
+
+    // useEffect(() => {
+    //     pressedPlay()
+    // }, [])
+
+    
+
 
 	// Getting the size of the root Div element (being the screen)
 	const rootRef = useRef(HTMLDivElement | null);
@@ -528,6 +514,11 @@ function D3timeline() {
 		>
 			
 			<h1 className="sakura-h1" style={{marginTop: '8vw'}}> A Year of Us.</h1>
+            {/* <button onClick={() => {
+                setPlay(!play)
+            }} >hi</button> */}
+            <audio ref={player} src={ambience}/>
+            {play ? <button className='pause-button' onClick={pressedPause}></button> : <button className='play-button' onClick={pressedPlay}></button>}
 			<div
 				ref={rootRef}
 				className="timeline"
