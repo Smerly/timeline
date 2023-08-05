@@ -53,42 +53,6 @@ body {
 	border: 5px rgb(255, 247, 247) solid;
 }
 
-.play-button {
-background: url('./images/sakura-volume-on.png');
-background-size: cover;
-width: 5.206vw;
-height: 4vw;
-border: none;
-transition: 0.5s;
-
-position: absolute;
-right: 5%;
-top: 2%;
-}
-
-.play-button:hover {
-	background-color: white;
-	box-shadow: 0 0 20px 20px rgb(255, 255, 255);
-}
-
-.pause-button {
-background: url('./images/sakura-volume-off.png');
-background-size: cover;
-width: 5.206vw;
-height: 4vw;
-border: none;
-transition: 0.5s;
-
-position: absolute;
-right: 5%;
-top: 2%;
-}
-
-.pause-button:hover {
-	background-color: white;
-	box-shadow: 0 0 20px 20px rgb(255, 255, 255);
-}
-
 /* Columns */
 
 .left-column {
@@ -117,7 +81,7 @@ top: 2%;
 	margin-left: auto;
 	/* flex: 50%; */
 	position: absolute;
-	right: 4.6%;
+	right: 4.5%;
 	height: 610px;
 	margin: auto;
 	margin-top: -62px;
@@ -154,23 +118,6 @@ top: 2%;
 
 
 /* Events */
-
-.back-arrow {
-	width: 8vw; 
-	margin: 1vw; 
-	margin-left: 4vw; 
-	margin-top: 3vw; 
-	transition: 0.5s;
-	/* background-color: white;
-	box-shadow: 0 0 20px 20px rgb(255, 255, 255); */
-}
-
-.back-arrow:hover {
-	/* box-shadow: 0 0 20px 20px rgb(255, 227, 232);
-	background-color: rgb(255, 227, 232); */
-	background-color: white;
-	box-shadow: 0 0 20px 20px rgb(255, 255, 255);
-}
 
 .overlay {
 	position: fixed;
