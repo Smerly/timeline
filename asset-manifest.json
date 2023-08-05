@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/timeline/static/css/main.3c13d71c.css",
+    "main.css": "/timeline/static/css/main.cb42298b.css",
     "main.js": "/timeline/static/js/main.705504d3.js",
     "static/js/787.e097d17b.chunk.js": "/timeline/static/js/787.e097d17b.chunk.js",
     "static/media/ambience.mp3": "/timeline/static/media/ambience.0c91474548818d0b9a0b.mp3",
@@ -11,12 +11,12 @@
     "static/media/sakura-arrow-pointer.png": "/timeline/static/media/sakura-arrow-pointer.641ddccd77a273712b54.png",
     "static/media/logo.svg": "/timeline/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/timeline/index.html",
-    "main.3c13d71c.css.map": "/timeline/static/css/main.3c13d71c.css.map",
+    "main.cb42298b.css.map": "/timeline/static/css/main.cb42298b.css.map",
     "main.705504d3.js.map": "/timeline/static/js/main.705504d3.js.map",
     "787.e097d17b.chunk.js.map": "/timeline/static/js/787.e097d17b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c13d71c.css",
+    "static/css/main.cb42298b.css",
     "static/js/main.705504d3.js"
   ]
 }
