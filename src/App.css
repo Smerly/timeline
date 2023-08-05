@@ -54,7 +54,7 @@ body {
 }
 
 .play-button {
-background: url('./images/sakura-volume-on.png');
+background: url('./images/sakura-volume-off.png');
 background-size: cover;
 width: 5.206vw;
 height: 4vw;
@@ -72,7 +72,7 @@ top: 2%;
 }
 
 .pause-button {
-background: url('./images/sakura-volume-off.png');
+background: url('./images/sakura-volume-on.png');
 background-size: cover;
 width: 5.206vw;
 height: 4vw;
