@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { useParams } from 'react-router-dom';
-import backArrow from './images/340.png';
+import backArrow from './images/sakura-arrow-pointer.png';
 import { Link } from 'react-router-dom';
 import { useResize } from './resize';
 import ReactPlayer from 'react-player';
@@ -47,7 +47,7 @@ function EventComponents() {
 			<div className='overlay' />
 			
 			<Link to={`/`}>
-				<img src={backArrow} style={{ width: '4vw', margin: '1vw', marginLeft: '4vw', marginTop: '3vw' }} />
+				<img src={backArrow} className='back-arrow' />
 			</Link>
 			<div className='event-main container'>
 				<h1 className='sakura-h1' style={{fontSize: '4vw'}}>{slug}</h1>
